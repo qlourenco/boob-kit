@@ -10,10 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_09_202456) do
+ActiveRecord::Schema.define(version: 2022_01_12_140157) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "forums", force: :cascade do |t|
+    t.string "pseudo"
+    t.string "age"
+    t.text "commentaire"
+    t.datetime "date_of_publication"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
