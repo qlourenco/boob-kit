@@ -25,8 +25,9 @@ require("channels")
 // External imports
 import "bootstrap";
 
-// Internal imports, e.g:
-// import { initSelect2 } from '../components/init_select2';
+// Internal imports
+import { activeLink } from '../components/navbar_active';
+
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:

@@ -1,1 +1,40 @@
-// Specific CSS for your home-page
+.total-home{
+  margin-top: 12vh;
+}
+
+.part-logo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-logo{
+  font-family: 'SeoulHangang-Ligth';
+  color: $ored;
+}
+
+.p-logo{
+  font-family: 'Allura', cursive;
+  line-height: 4.25 rem;
+  color: $rose;
+}
+
+.pourcentage{
+  font-family: 'Open Sans';
+  font-weight: 800;
+  color: $ored;
+}
+
+.info-pourcent{
+  font-family: 'Open Sans';
+  font-weight: 800;
+  color: $orange;
+}
+
+.right-border{
+  border-right: 0.25px solid $orange;
+}
+
+.part-rose{
+  background: $rose;
+}

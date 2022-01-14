@@ -1,11 +1,6 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: $ored;
-}
-
-.navbar-lewagon li{
-  text-decoration: none;
-  color: white;
+  background: $orange;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -17,6 +12,19 @@
 }
 
 .navbar h2{
-  font-size: 48px;
+  font-size: 32px;
+  font-weight: 800;
   color: white;
 }
+
+.link-color {
+  text-decoration: none;
+  color: $rose;
+  &:hover{
+    color: white;
+  }
+}
+
+// .actif .link-color{
+//   color: white;
+// }
