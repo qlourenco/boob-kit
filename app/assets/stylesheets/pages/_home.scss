@@ -1,5 +1,5 @@
 .total-home{
-  margin-top: 12vh;
+  margin-top: 13vh;
 }
 
 .part-logo{
@@ -9,13 +9,16 @@
 }
 
 .title-logo{
+  @include font-size(175px);
   font-family: 'SeoulHangang-Ligth';
   color: $ored;
+  z-index: 900;
 }
 
 .p-logo{
+  @include font-size(75px);
   font-family: 'Allura', cursive;
-  line-height: 4.25 rem;
+  line-height: 4.25rem;
   color: $rose;
 }
 
@@ -32,9 +35,21 @@
 }
 
 .right-border{
+  border-right: 0.05px solid $orange;
+  border-left: 0.25px solid $orange;
+}
+
+.left-border{
+  border-left: 0.05px solid $orange;
   border-right: 0.25px solid $orange;
 }
 
 .part-rose{
   background: $rose;
+  box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.521);
+  h2{
+    font-family: 'Open Sans';
+    font-weight: 800;
+    color: $ored;
+  }
 }
