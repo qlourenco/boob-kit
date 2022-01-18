@@ -6,5 +6,3 @@ function activeLink() {
   console.log(list)
 }
 list.forEach((item) => item.addEventListener('click', activeLink));
-
-export { activeLink };

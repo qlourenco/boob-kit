@@ -26,10 +26,9 @@ require("channels")
 import "bootstrap";
 
 // Internal imports
-import { activeLink } from '../components/navbar_active';
 
-
-document.addEventListener('turbolinks:load', () => {
-  // Call your functions here, e.g:
-  // initSelect2();
-});
+// const liActive = document.querySelector(".li.active")
+// document.ready(function () {
+//   liActive.removeClass('active');
+//   $('a[href="' + location.pathname + '"]').closest('li').addClass('active');
+// });

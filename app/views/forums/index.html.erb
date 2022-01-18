@@ -1,0 +1,18 @@
+<div class="top-forum my-5">
+  <%= simple_form_for(@forum) do |f| %>
+    <%= f.input :pseudo %>
+    <%= f.input :age %>
+    <%= f.input :commentaire %>
+    <%= f.submit %>
+  <% end %>
+</div>
+
+<div class="commentaire container">
+  <% @forums.reverse_each do |forum| %>
+    <div class="row">
+      <%= forum.pseudo %>
+      <%= forum.age %>
+      <%= forum.commentaire %>
+    </div>
+  <% end %>
+</div>
