@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(version: 2022_01_12_140157) do
 
   create_table "forums", force: :cascade do |t|
     t.string "pseudo"
-    t.string "age"
+    t.integer "age"
     t.text "commentaire"
     t.datetime "date_of_publication"
     t.datetime "created_at", precision: 6, null: false

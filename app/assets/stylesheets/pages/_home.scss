@@ -106,14 +106,6 @@
   text-align: right;
 }
 
-.l-plus{
-  @include font-size(32px);
-  font-family: 'Open Sans';
-  font-weight: bold;
-  color: white;
-  text-align: left;
-}
-
 .l-para{
   @include font-size(32px);
   font-family: 'Open Sans';
@@ -123,5 +115,5 @@
 }
 
 .part-livret{
-  margin-top: 5rem;
+  margin-top: 4rem;
 }

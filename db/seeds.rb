@@ -13,7 +13,7 @@ puts "[User]..."
 User.create(email: "boob@kit.fr", password: "secret")
 
 puts 'Creating reviews...'
-Forum.create!({ pseudo: "Linda", age: "28", commentaire: "Bonjour, je suis Linda" })
-Forum.create!({ pseudo: "Britney", age: "47", commentaire: "Bonjour, je suis Britney" })
+Forum.create!({ pseudo: "Linda", age: 28, commentaire: "Bonjour, je suis Linda" })
+Forum.create!({ pseudo: "Britney", age: 47, commentaire: "Bonjour, je suis Britney" })
 
 puts "Seeds created !"

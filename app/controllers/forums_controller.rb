@@ -5,7 +5,7 @@ class ForumsController < ApplicationController
     @forums = Forum.all
     @forum = Forum.new
   end
-
+ 
   def create
     @forum = Forum.new(forum_params)
     @forum.save
