@@ -1,24 +1,28 @@
-<div class="top-forum mb-5">
-  <%= simple_form_for(@forum) do |f| %>
-    <div class="form-row">
-      <div class="col-md-8">
-        <%= f.input :pseudo %>
-      </div>
-      <div class="col-md-4">
-        <%= f.input :age %>
-      </div>
-    </div>
-    <%= f.input :commentaire %>
-    <%= f.submit %>
-  <% end %>
-</div>
+<div class="forum-page ">
 
-<div class="commentaire container">
-  <% @forums.reverse_each do |forum| %>
-    <div class="row">
-      <%= forum.pseudo.capitalize %>
-      <%= forum.age %>
-      <%= forum.commentaire.capitalize %>
-    </div>
-  <% end %>
+  <div class="top-forum mb-5 p-5">
+    <%= simple_form_for(@forum) do |f| %>
+      <div class="form-row">
+        <div class="col-md-4">
+          <%= f.input :pseudo, class: "form-group" %>
+        </div>
+        <div class="col-md-6"></div>
+        <div class="col-md-2">
+          <%= f.input :age, class: "form-group" %>
+        </div>
+      </div>
+      <%= f.input :commentaire, class: "form-group" %>
+      <%= f.submit "Ajouter", class: "sub-btn btn btn-primary"%>
+    <% end %>
+  </div>
+
+  <div class="commentaire">
+    <% @forums.reverse_each do |forum| %>
+      <div class="row">
+        <%= forum.pseudo.capitalize %>
+        <%= forum.age %>
+        <%= forum.commentaire.capitalize %>
+      </div>
+    <% end %>
+  </div>
 </div>

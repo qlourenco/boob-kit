@@ -13,7 +13,7 @@ $enable-responsive-font-sizes: true;
 
 // Colors
 $body-color: $noir;
-$primary:    $blue;
+$primary:    $ored;
 $success:    $green;
 $info:       $yellow;
 $danger:     $red;
@@ -25,3 +25,5 @@ $border-radius-lg: 2px;
 $border-radius-sm: 2px;
 
 // Override other variables below!
+$input-focus-border-color: $ored;
+$input-focus-box-shadow: 0px 0px 7px 5px rgba(255,178,36,0.19);

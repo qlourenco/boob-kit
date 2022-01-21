@@ -1,0 +1,20 @@
+.bk-footer{
+  margin: 0px auto;
+}
+
+.insta-link{
+  @include font-size(20px);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: $ored;
+  a{
+    text-decoration: none;
+    &:hover{
+      color: #e2664d;
+    }
+  }
+}
+
+.polytech{
+  width: 30%;
+}
