@@ -1,9 +1,10 @@
-.prochainement{
-  margin-top: 50vh;
+.photo-equipe{
+  margin-top: 15vh;
   display: flex;
-  justify-content: space-around;
-  color: $ored;
-  font-family: 'Open Sans';
-  font-weight: 800;
-  overflow-y: hidden;
+  justify-content: center;
+}
+
+.img-equipe{
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, .3);
 }
