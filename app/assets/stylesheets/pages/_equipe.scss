@@ -10,19 +10,20 @@
 }
 
 .txt-equipe{
-  margin: 7vh 10vh;
+  margin: 7vh 7vh;
   h3{
+    @include font-size(32px);
     font-family: 'Open Sans';
     font-weight: 800;
     color: $orange;
-    text-shadow: 2px 2px 4px rgba(255, 0, 200, 0.404);
+    text-shadow: 2px 2px 4px rgba(248, 108, 218, 0.3);
     .quotes-txt{
       color: $ored;
     }
   }
 
   p{
-    @include font-size(32px);
+    @include font-size(26px);
     font-family: 'Allura', cursive;
     text-align: right;
     color: $ored;
