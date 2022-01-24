@@ -11,18 +11,22 @@
           <%= f.input :age, class: "form-group" %>
         </div>
       </div>
-      <%= f.input :commentaire, class: "form-group" %>
+      <%= f.input :commentaire, :input_html => {:style=> 'height: 160px'}, class: "form-group" %>
       <%= f.submit "Ajouter", class: "sub-btn btn btn-primary"%>
     <% end %>
   </div>
 
   <div class="commentaire">
     <% @forums.reverse_each do |forum| %>
-      <div class="row">
+      <div class="simple-com m-5">
         <%= forum.pseudo.capitalize %>
         <%= forum.age %>
-        <%= forum.commentaire.capitalize %>
+        <div class="com-pad">
+          <%= forum.commentaire.capitalize %>
+        </div>
       </div>
     <% end %>
   </div>
 </div>
+
+<%= render 'shared/footer' %>
