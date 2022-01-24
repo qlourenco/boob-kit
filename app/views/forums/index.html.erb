@@ -11,7 +11,7 @@
           <%= f.input :age, class: "form-group" %>
         </div>
       </div>
-      <%= f.input :commentaire, :input_html => {:style=> 'height: 160px'}, class: "form-group" %>
+      <%= f.input :commentaire, :input_html => {:maxlength =>480, :style=> 'height: 160px'}, class: "form-group" %>
       <%= f.submit "Ajouter", class: "sub-btn btn btn-primary"%>
     <% end %>
   </div>
@@ -19,10 +19,9 @@
   <div class="commentaire">
     <% @forums.reverse_each do |forum| %>
       <div class="simple-com my-5">
-        <%= forum.pseudo.capitalize %>
-        <%= forum.age %>
+        <h3 class="pb-2"><span class="pseudo-com"><%= forum.pseudo.capitalize %></span>, <%= forum.age %> ans</h3>
         <div class="com-pad">
-          <%= forum.commentaire.capitalize %>
+          <p><%= forum.commentaire.capitalize %></p>
         </div>
       </div>
     <% end %>
