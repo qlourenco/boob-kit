@@ -25,10 +25,14 @@ require("channels")
 // External imports
 import "bootstrap";
 
+
 // Internal imports
 
-// const liActive = document.querySelector(".li.active")
-// document.ready(function () {
-//   liActive.removeClass('active');
-//   $('a[href="' + location.pathname + '"]').closest('li').addClass('active');
-// });
+// const currentLocation = location.href;
+// const menuItem = document.querySelectorAll('.nav-item');
+// const menuLength = menuItem.length
+// for (let i = 0; i < menuLength; i++) {
+//   if (menuItem[i].href === currentLocation) {
+//     menuItem[i].className = "active"
+//   }
+// }
