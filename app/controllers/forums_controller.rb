@@ -5,7 +5,7 @@ class ForumsController < ApplicationController
     @forums = Forum.all
     @forum = Forum.new
   end
- 
+
   def create
     @forum = Forum.new(forum_params)
     @forum.save
@@ -13,8 +13,8 @@ class ForumsController < ApplicationController
   end
 
   def destroy
-    @article = Article.find(params[:id])
-    @article.destroy
+    @forum = Forum.find(params[:id])
+    @forum.destroy
     redirect_to forums_path
   end
 
