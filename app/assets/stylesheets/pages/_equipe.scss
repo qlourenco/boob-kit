@@ -11,19 +11,23 @@
 
 .txt-equipe{
   margin: 7vh 7vh;
+  background: $rose;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, .3);
+  border-radius: 5px;
   h3{
     @include font-size(32px);
     font-family: 'Open Sans';
     font-weight: 800;
-    color: $orange;
+    color: white;
     text-shadow: 2px 2px 4px rgba(248, 108, 218, 0.3);
+    text-align: "." center;
     .quotes-txt{
       color: $ored;
     }
   }
 
   p{
-    @include font-size(26px);
+    @include font-size(32px);
     font-family: 'Allura', cursive;
     text-align: right;
     color: $ored;
