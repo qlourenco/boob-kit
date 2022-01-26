@@ -18,7 +18,7 @@
 
   <div class="commentaire">
     <% @forums.reverse_each do |forum| %>
-      <div class="simple-com my-5" data-aos="fade-up" data-aos-offset="50" data-aos-duration="5000" data-aos-easing="ease-in-out">
+      <div class="simple-com my-5" data-aos="fade-up" data-aos-offset="20" data-aos-duration="5000" data-aos-easing="ease-in-out">
         <div class="top-com d-flex justify-content-between">
           <h3 class="pb-2"><span class="pseudo-com"><%= forum.pseudo.capitalize %></span>, <%= forum.age %> ans</h3>
           <% if user_signed_in? %>
