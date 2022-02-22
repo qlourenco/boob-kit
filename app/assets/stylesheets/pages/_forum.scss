@@ -35,10 +35,7 @@ label{
 }
 
 .simple-com{
-	// layout
 	position: relative;
-
-	// looks
 	background-color: $ored;
 	padding: 1.125em 1.5em;
 	font-size: 1.25em;
@@ -47,17 +44,14 @@ label{
   box-shadow: 0px 2px 4px rgba(0, 0, 0, .3);
 
   &:before {
-    // layout
     content: '';
     position: absolute;
     width: 0;
     height: 0;
     bottom: 100%;
-    left: 1.5em; // offset should move with padding of parent
+    left: 1.5em;
     border: .75rem solid transparent;
     border-top: none;
-
-    // looks
     border-bottom-color: $ored;
     filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, .1));
   }
