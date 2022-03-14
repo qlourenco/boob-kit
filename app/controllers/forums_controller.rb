@@ -1,4 +1,5 @@
 class ForumsController < ApplicationController
+  
   skip_before_action :authenticate_user!, only: [ :index, :new, :create ]
 
   def index
