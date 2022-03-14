@@ -80,4 +80,6 @@ test:
 #
 production:
   <<: *default
-  url: <%= ENV['POSTGRESQL_ADDON_URI'] %>
+  database: boobkit_production
+  username: boobkit
+  password: <%= ENV['BOOBKIT_DATABASE_PASSWORD'] %>>
