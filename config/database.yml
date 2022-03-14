@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: boobkit_production
-  username: boobkit
-  password: <%= ENV['BOOBKIT_DATABASE_PASSWORD'] %>>
+  database: boob_kit_production
+  username: boob_kit
+  password: <%= ENV['BOOB_KIT_DATABASE_PASSWORD'] %>>
