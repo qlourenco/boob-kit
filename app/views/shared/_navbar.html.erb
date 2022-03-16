@@ -11,16 +11,16 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <% if user_signed_in? %>
-        <li class="nav-item">
+        <li class="nav-item inactive-link <%= 'active-link' if current_page?(root_path) %>">
           <%= link_to "Accueil", root_path, class: "nav-link link-color" %>
         </li>
-        <li class="nav-item">
+        <li class="nav-item inactive-link <%= 'active-link' if current_page?(equipe_path) %>">
           <%= link_to "Equipe", equipe_path, class: "nav-link link-color" %>
         </li>
-        <li class="nav-item">
+        <li class="nav-item inactive-link <%= 'active-link' if current_page?(projet_path) %>">
           <%= link_to "Projet", projet_path, class: "nav-link link-color" %>
         </li>
-        <li class="nav-item">
+        <li class="nav-item inactive-link <%= 'active-link' if current_page?(forums_path) %>">
           <%= link_to "Forum", forums_path, class: "nav-link link-color" %>
         </li>
         <li class="nav-item dropdown">
@@ -30,17 +30,17 @@
           </div>
         </li>
       <% else %>
-        <li class="nav-item active">
+        <li class="nav-item inactive-link <%= 'active-link' if current_page?(root_path) %>">
           <%= link_to "Accueil", root_path, class: "nav-link link-color" %>
         </li>
-        <li class="nav-item">
+        <li class="nav-item inactive-link <%= 'active-link' if current_page?(equipe_path) %>">
           <%= link_to "Equipe", equipe_path, class: "nav-link link-color" %>
         </li>
-        <li class="nav-item">
+        <li class="nav-item inactive-link <%= 'active-link' if current_page?(projet_path) %>">
           <%= link_to "Projet", projet_path, class: "nav-link link-color" %>
         </li>
-        <li class="nav-item">
-          <%= link_to "Forum", forums_path, class: "nav-link link-color" %>
+        <li class="nav-item inactive-link <%= 'active-link' if current_page?(forums_path) %>">
+          <%= link_to "Forum", forums_path, class: "nav-link" %>
         </li>
       <% end %>
     </ul>

@@ -4,9 +4,9 @@
 }
 
 .insta-link{
-  @include font-size(20px);
+  @include font-size(25px);
   font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   color: $ored;
   a{
     text-decoration: none;
