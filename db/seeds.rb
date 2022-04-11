@@ -12,9 +12,4 @@ puts "Creating seeds..."
 puts "[User]..."
 User.create(email: "boob@kit.fr", password: "secret")
 
-puts 'Creating reviews...'
-Forum.create!({ pseudo: "Yaèl", age: 21, commentaire: "Boob'Kit c'est de la bombe bébé" })
-Forum.create!({ pseudo: "Chloé", age: 21, commentaire: "Essayer Boob'Kit les boloss" })
-Forum.create!({ pseudo: "Quentin", age: 23, commentaire: "Ceci est un message de test" })
-
 puts "Seeds created !"
