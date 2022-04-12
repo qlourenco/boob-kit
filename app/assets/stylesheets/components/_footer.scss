@@ -4,15 +4,12 @@
 }
 
 .insta-link{
-  @include font-size(25px);
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
-  color: $ored;
   a{
+    color: white;
     text-decoration: none;
-    &:hover{
-      color: #e2664d;
-    }
+    @include font-size(25px);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
   }
 }
 
