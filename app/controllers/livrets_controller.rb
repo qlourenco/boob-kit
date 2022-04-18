@@ -1,4 +1,4 @@
-class ProjetsController < ApplicationController
+class LivretsController < ApplicationController
   skip_before_action :authenticate_user!, only: [ :index ]
 
   def index
